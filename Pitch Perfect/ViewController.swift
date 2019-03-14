@@ -16,13 +16,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        stopButton.isEnabled = false
-        recordButton.isEnabled = true
-        recordLabel.text = "Start Recording"
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        stopButton.isEnabled = false
+        recordButton.isEnabled = true
+        recordLabel.text = "Tap to record"
     }
 
     @IBAction func startRecordingPressed(_ sender: Any) {
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     @IBAction func stopRecordingPressed(_ sender: Any) {
         stopButton.isEnabled = false
         recordButton.isEnabled = true
-        recordLabel.text = "Start Recording"
+        recordLabel.text = "Tap to record"
         performSegue(withIdentifier: "EditRecording", sender: (Any).self)
     }
 }
