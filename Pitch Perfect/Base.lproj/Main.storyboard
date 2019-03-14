@@ -18,49 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zE-my-5zp">
-                                <rect key="frame" x="127.5" y="441" width="120" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mL1-0f-m0r">
-                                <rect key="frame" x="155" y="498" width="65" height="64"/>
+                                <rect key="frame" x="152.5" y="458" width="70" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="pdi-yN-J6g"/>
+                                    <constraint firstAttribute="width" constant="70" id="BW2-Rq-NO5"/>
+                                    <constraint firstAttribute="height" constant="70" id="pdi-yN-J6g"/>
                                 </constraints>
                                 <state key="normal" image="Stop"/>
                                 <connections>
-                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pub-Tu-NwK"/>
+                                    <action selector="stopRecordingPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wUm-nP-3gX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMd-Hv-JWa">
-                                <rect key="frame" x="127" y="441" width="121" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhD-bH-MLg">
                                 <rect key="frame" x="110" y="256" width="155" height="155"/>
                                 <state key="normal" image="Record"/>
                                 <connections>
-                                    <action selector="startRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BRy-mm-9kG"/>
+                                    <action selector="startRecordingPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i60-fg-33g"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMd-Hv-JWa">
+                                <rect key="frame" x="87.5" y="428" width="200" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="RrG-58-N2x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1zE-my-5zp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5we-fV-DPv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oMd-Hv-JWa" secondAttribute="trailing" symbolic="YES" id="CEd-O6-8xy"/>
-                            <constraint firstItem="mL1-0f-m0r" firstAttribute="top" secondItem="oMd-Hv-JWa" secondAttribute="bottom" constant="36" id="JOr-w5-JTu"/>
+                            <constraint firstItem="oMd-Hv-JWa" firstAttribute="top" secondItem="FhD-bH-MLg" secondAttribute="bottom" constant="17" id="Gi8-9A-cXq"/>
                             <constraint firstItem="FhD-bH-MLg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ShF-Zm-eQp"/>
-                            <constraint firstItem="oMd-Hv-JWa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="127" id="VTR-3N-fT6"/>
-                            <constraint firstItem="mL1-0f-m0r" firstAttribute="centerX" secondItem="oMd-Hv-JWa" secondAttribute="centerX" id="YXu-Es-aAQ"/>
-                            <constraint firstItem="mL1-0f-m0r" firstAttribute="top" secondItem="1zE-my-5zp" secondAttribute="bottom" constant="36" id="jOm-CC-KGo"/>
-                            <constraint firstItem="oMd-Hv-JWa" firstAttribute="top" secondItem="FhD-bH-MLg" secondAttribute="bottom" constant="30" id="rbV-HM-AUQ"/>
+                            <constraint firstItem="oMd-Hv-JWa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kTz-PT-v2Q"/>
+                            <constraint firstItem="mL1-0f-m0r" firstAttribute="top" secondItem="oMd-Hv-JWa" secondAttribute="bottom" constant="30" id="ru7-07-91d"/>
                             <constraint firstItem="mL1-0f-m0r" firstAttribute="centerX" secondItem="FhD-bH-MLg" secondAttribute="centerX" id="sxz-vb-O2H"/>
+                            <constraint firstItem="FhD-bH-MLg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tCL-zc-3f0"/>
+                            <constraint firstItem="FhD-bH-MLg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v77-Le-Ghy"/>
                             <constraint firstItem="FhD-bH-MLg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w2Y-4d-B3C"/>
-                            <constraint firstItem="mL1-0f-m0r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="w5c-im-eOj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
