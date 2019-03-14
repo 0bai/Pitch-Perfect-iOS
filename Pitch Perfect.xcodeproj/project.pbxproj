@@ -13,6 +13,7 @@
 		2AA6757922396DC000CFEFEE /* Pitch_Perfect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2AA6757722396DC000CFEFEE /* Pitch_Perfect.xcdatamodeld */; };
 		2AA6757B22396DC300CFEFEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AA6757A22396DC300CFEFEE /* Assets.xcassets */; };
 		2AA6757E22396DC300CFEFEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA6757C22396DC300CFEFEE /* LaunchScreen.storyboard */; };
+		2AED0BC9223AA0560030A3D5 /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AED0BC8223AA0560030A3D5 /* PlaySoundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2AA6757A22396DC300CFEFEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AA6757D22396DC300CFEFEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AA6757F22396DC300CFEFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AED0BC8223AA0560030A3D5 /* PlaySoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				2AA6757C22396DC300CFEFEE /* LaunchScreen.storyboard */,
 				2AA6757F22396DC300CFEFEE /* Info.plist */,
 				2AA6757722396DC000CFEFEE /* Pitch_Perfect.xcdatamodeld */,
+				2AED0BC8223AA0560030A3D5 /* PlaySoundViewController.swift */,
 			);
 			path = "Pitch Perfect";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				2AA6757322396DC000CFEFEE /* RecordSoundViewController.swift in Sources */,
 				2AA6757122396DC000CFEFEE /* AppDelegate.swift in Sources */,
+				2AED0BC9223AA0560030A3D5 /* PlaySoundViewController.swift in Sources */,
 				2AA6757922396DC000CFEFEE /* Pitch_Perfect.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
